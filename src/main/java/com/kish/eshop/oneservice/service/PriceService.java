@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.kish.eshop.oneservice.fallback.PriceServiceFallback;
+import com.kish.eshop.oneservice.service.fallback.PriceServiceFallback;
 
 @FeignClient(value = "price-service",fallback=PriceServiceFallback.class)
 public interface PriceService {
